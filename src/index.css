@@ -15,12 +15,24 @@ body {
 }
 
 /* Heading */
-h1 {
-  font-size: 4rem;
-  color: #00e676;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+.heading-block {
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top:-30px;
+  margin-left: 320px;
   margin-bottom: 40px;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 230, 118, 0.2);
 }
+
+.heading-block h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #0f0f0f;
+  text-shadow: none;
+}
+
 
 /* Input field */
 input[type="text"] {
@@ -61,11 +73,18 @@ input[type="text"]:focus {
 /* Add Button */
 .add-button {
   background: linear-gradient(to right, #43e97b, #38f9d7);
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1px 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 255, 150, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .add-button:hover {
   background-color: #2ecc71;
-  transform: scale(1.05);
+  transform: scale(1.07);
+  box-shadow: 0 10px 24px rgba(0, 255, 150, 0.5);
 }
 
 /* Delete Button */
